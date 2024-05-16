@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-   
+    <section class="sec">
     <h1>Lengua y Lenguaje</h1>
     <div class="txt">
       sistema de comunicación verbal que utiliza sonidos, palabras y reglas
@@ -63,21 +63,17 @@
       3. ⁠ De igual forma son fundamentales para la interacción social, el
       aprendizaje, el desarrollo cognitivo y la transmisión de cultura.
     </p>
-
+  </section>
     <script>
 
-
-      for (let i = 0; i < 40; i++) {
-        let body = document.querySelector('body')
-        let span = document.createElement('span');
-        document.body.appendChild(span);
+      for (let i = 0; i < 100; i++) {
+        let span = document.createElement('div');
+        span.classList.add('bubble')
+        document.querySelector('.sec').appendChild(span);
         span.style.left = Math.random() * + innerWidth + 'px';
-        span.style.bottom = Math.random() * + innerHeight + 'px';
-        body.style.width = 100 + '%';
-        body.style.height = 100 + '%';
+        span.style.top = Math.random() * innerHeight + 'px';
       }
-
-        
+    
     </script>
   </body>
 </html>
