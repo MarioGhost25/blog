@@ -5,15 +5,12 @@
 }
 
 body{
-
+   
     background: #fecadf85;
     font-family: 'Open Sans';
 }
 
-.txt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.txt{   
     margin: 10px 15%;
     background: #fff;
     border-radius: 20px;
@@ -31,10 +28,17 @@ h1{
     backdrop-filter: blur(50px);
 }
 
-h2{
+.container{
     display: flex;
-    justify-content: start;
-    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-item{
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 500px;
+}
+h2{
+   
     margin-right: 40%;
     margin-left: 5%;
     padding: 10px;
@@ -42,9 +46,6 @@ h2{
 }
 
 p{
-    display: flex;
-    justify-content: start;
-    align-items: center;
     margin-right: 40%;
     margin-left: 5%;
     background: #fff;
@@ -81,5 +82,10 @@ p{
 }
 
 
-
-
+@media screen and (max-width:600px) {
+    p h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
